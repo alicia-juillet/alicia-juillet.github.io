@@ -3,7 +3,7 @@ import './App.css'
 function App() {
   return (
     <>
-      <h1>Alicia Juillet</h1>
+      <h1>Alicia Juillet, développeuse web.</h1>
     </>
   )
 }
