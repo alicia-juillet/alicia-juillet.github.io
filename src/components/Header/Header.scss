@@ -1,0 +1,49 @@
+.header {
+    background-color: #242323;
+    justify-content: space-between;
+    display: flex;
+    padding: 0 200px 0 100px;
+    position: sticky;
+    top: 0;
+   
+}
+
+.logo {
+    display: flex;
+    height: 100%;
+    width: 300px;
+}
+
+.link {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+   
+
+    a, .scroll-link {
+        text-decoration: none;
+        color: #dfd5c8;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700; 
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    a:hover, .scroll-link:hover {
+            color: #deb2ab;
+            font-weight: bold;
+        }
+
+    a.active,
+    .scroll-link.active{
+    color: #deb2ab;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 1px solid #deb2ab ;
+    padding: 10px;
+    box-shadow: 5px 5px 20px #c38f79;
+    }
+}
+
+
