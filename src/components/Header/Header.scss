@@ -12,37 +12,34 @@
     display: flex;
     height: 100%;
     width: 300px;
+    cursor: pointer;
 }
 
 .link {
     display: flex;
-    justify-content: flex-end;
     gap: 20px;
     align-items: center;
    
 
-    a, .scroll-link {
+    a {
         text-decoration: none;
         color: #dfd5c8;
         font-family: 'Playfair Display', serif;
         font-weight: 700; 
         cursor: pointer;
         transition: all 0.3s ease;
+        border-bottom: 2px solid transparent;
     }
 
-    a:hover, .scroll-link:hover {
+    a:hover {
             color: #deb2ab;
             font-weight: bold;
         }
 
-    a.active,
-    .scroll-link.active{
+    a.active{
     color: #deb2ab;
-    font-weight: bold;
-    border-radius: 20px;
-    border: 1px solid #deb2ab ;
     padding: 10px;
-    box-shadow: 5px 5px 20px #c38f79;
+    border-bottom: 2px solid #deb2ab
     }
 }
 

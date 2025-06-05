@@ -1,7 +1,19 @@
+@use "./reset.scss";
+
 body {
     font-family: 'Quicksand', sans-serif;
+    background-image: url('/src/assets/background1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
 }
 
 h1, h2{
     font-family: 'Playfair Display', serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
