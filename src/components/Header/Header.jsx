@@ -14,6 +14,7 @@ function Header () {
             element.classList.remove('active');
         });
         window.scrollTo({ top:0, behavior: 'smooth'})
+        window.history.pushState(null, '', '/')
     }
 
     return (

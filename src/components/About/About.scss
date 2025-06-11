@@ -1,0 +1,48 @@
+#about {
+    background-color: #242323;
+    color: #dfd5c8;
+     padding: 150px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+   
+
+    h2 {
+        font-size: 40px;
+        text-align: center;
+        text-decoration: underline;
+        
+        
+      
+    }
+
+    .all-about-me {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        background-color: #312B2B;
+        border: 1px solid #dfd5c8;
+        border-radius: 20px;
+        padding: 20px;
+        font-size: 16px;
+
+        .about-me {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+        border-right: 1px solid #dfd5c8;
+        padding-right: 50px;
+        }
+
+        .img-about {
+        width: 100px;
+        border-radius: 50%;
+        }
+        
+    }
+
+ 
+
+   
+}
