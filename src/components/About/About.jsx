@@ -24,6 +24,16 @@ function About () {
                     utiles et innovants, au service des utilisateurs.
                     </p>
                 </div>
+                <div className="cv">
+                    <a
+                        href="/CV_Alicia_Juillet.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-cv"
+                    >
+                        Télécharger mon CV
+                    </a>
+                </div>
             </div>    
         </section>
     )

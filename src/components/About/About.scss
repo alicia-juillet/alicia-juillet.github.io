@@ -39,6 +39,32 @@
         width: 100px;
         border-radius: 50%;
         }
+
+        .cv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid #dfd5c8;
+           
+
+            .btn-cv {
+            padding: 10px 20px;
+            border-left: 1px solid #dfd5c8;
+            background-color: #dfd5c8;
+            border-radius: 20px;
+            margin-left: 50px;
+            color: #242323;
+            text-decoration: none;
+            font-weight: bold;
+            
+            &:hover {
+                color: #6B0000 ;
+            }
+            
+        }
+        }
+
+        
         
     }
 
