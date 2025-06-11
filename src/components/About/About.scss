@@ -1,19 +1,17 @@
+
+
 #about {
     background-color: #242323;
     color: #dfd5c8;
-     padding: 150px 200px;
+    padding: 200px 200px;
     display: flex;
     flex-direction: column;
     gap: 50px;
-   
 
     h2 {
         font-size: 40px;
         text-align: center;
         text-decoration: underline;
-        
-        
-      
     }
 
     .all-about-me {
@@ -62,13 +60,6 @@
             }
             
         }
-        }
-
-        
-        
+        } 
     }
-
- 
-
-   
 }
