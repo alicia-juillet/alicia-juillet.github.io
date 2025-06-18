@@ -18,30 +18,35 @@ const projects = [
     name: "Booki",
     logo: bookiLogo,
     preview: bookiPreview,
+    technos: ["devicon-html5-plain", "devicon-css3-plain"]
   },
   {
     id: "sophie-bluel",
     name: "Sophie Bluel",
     logo: sophieBluelLogo,
     preview: sophieBluelPreview,
+    technos: ["devicon-html5-plain", "devicon-css3-plain"]
   },
   {
     id: "nina-carducci",
     name: "Nina Carducci",
     logo: ninaCarducciLogo,
     preview: ninaCarducciPreview,
+    technos: ["devicon-html5-plain", "devicon-css3-plain"]
   },
   {
     id: "kasa",
     name: "Kasa",
     logo: kasaLogo,
     preview: kasaPreview,
+    technos: ["devicon-html5-plain", "devicon-css3-plain"]
   },
   {
     id: "mon-vieux-grimoire",
     name: "Mon vieux grimoire",
     logo: monVieuxGrimoireLogo,
     preview: monVieuxGrimoirePreview,
+    technos: ["devicon-html5-plain", "devicon-css3-plain"]
   },
 ];
 
@@ -62,10 +67,21 @@ function ProjectsSection() {
           </div>
         ))}
       </div>
+      <div className="project-and-technos">
 
-      <div className="project-preview">
-        <img src={activeProject.preview} alt={`Aperçu de ${activeProject.name}`} />
+        <div className="project-technos">
+          {activeProject.technos.map((iconClass, index) => (
+          <i key={index} className={`${iconClass} colored`}></i>
+          ))}
+        </div>
+
+        <div className="project-preview">
+          <img src={activeProject.preview} alt={`Aperçu de ${activeProject.name}`} />
+        </div>
+        
       </div>
+
+
     </section>
   );
 }

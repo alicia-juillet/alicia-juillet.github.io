@@ -1,8 +1,9 @@
 import Header from "./components/Header/Header"
 import Presentation from "./components/Presentation/Presentation"
 import About from "./components/About/About"
-import Projects from "./components/Projects/Projects"
 import ProjectsSection from "./components/Projects/Projects"
+import Skills from "./components/Skills/Skills"
+import Contact from "./components/Contact/Contact"
 
 
 
@@ -15,10 +16,8 @@ function App() {
         <Presentation/>
         <About/>
         <ProjectsSection/>
-        <section id="contact">
-          <h2>Me contacter</h2>
-          <p>coordonnées blablabla </p>
-        </section>
+        <Skills/>
+        <Contact/>
       
       </main>
     </>

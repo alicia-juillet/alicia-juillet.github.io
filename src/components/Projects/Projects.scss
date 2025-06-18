@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     padding: 100px 200px;
+    gap: 50px;
 
     h2 {
         font-size: 40px;
@@ -10,4 +11,57 @@
         text-decoration: underline;
         color: #4D0000;
     }
+
+    .project-grid{
+        display: flex;
+        justify-content: space-between;
+        
+        .project-card img{
+            width: auto;
+            height: 70px;
+            border-radius: 20px;
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+             transition: transform 0.3s;
+                &:hover {
+                transform: scale(1.2);
+            }
+            
+        } 
+    }
+
+    
+
+    .project-preview img{
+        width: 720px;
+    }
+
+    .project-and-technos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      
+
+        .project-technos {
+            display: flex;
+            gap: 12px;
+            font-size: 2rem;
+
+            i {
+                transition: transform 0.3s;
+                &:hover {
+                transform: scale(1.2);
+            }
+        }
+}
+
+
+        .project-preview{
+        display: flex;
+        justify-content: center;
+    }
+      
+    }
+
+    
 }
