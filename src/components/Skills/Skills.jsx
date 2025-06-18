@@ -12,7 +12,8 @@ function Skills() {
                     <i className="devicon-html5-plain colored" title="HTML5"></i>
                     <i className="devicon-css3-plain colored"title="CSS3"></i>
                     <i className="devicon-javascript-plain colored"title="JavaScript"></i>
-                    <i className="devicon-react-plain colored"title="React"></i>   
+                    <i className="devicon-react-plain colored"title="React"></i> 
+                    <i className="devicon-sass-plain colored" title="SASS"></i>  
                 </div>
             </div>
             <div className="skills-category">

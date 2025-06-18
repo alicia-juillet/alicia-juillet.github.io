@@ -10,6 +10,8 @@ import kasaLogo from "../../assets/images/Kasa.png"
 import kasaPreview from "../../assets/images/kasa-preview.png"
 import monVieuxGrimoireLogo from "../../assets/images/Mon-vieux-grimoire.png"
 import monVieuxGrimoirePreview from "../../assets/images/mon-vieux-grimoire-preview.png"
+import accessibilityIcon from "../../assets/accessibility.png";
+import seoIcon from "../../assets/seo.png";
 
 
 const projects = [
@@ -18,6 +20,7 @@ const projects = [
     name: "Booki",
     logo: bookiLogo,
     preview: bookiPreview,
+    github: "https://github.com/alicia-juillet/Booki-starter-pack.git",
     technos: ["devicon-html5-plain", "devicon-css3-plain"]
   },
   {
@@ -25,28 +28,32 @@ const projects = [
     name: "Sophie Bluel",
     logo: sophieBluelLogo,
     preview: sophieBluelPreview,
-    technos: ["devicon-html5-plain", "devicon-css3-plain"]
+    github: "https://github.com/alicia-juillet/Portfolio-architecte-sophie-bluel.git",
+    technos:["devicon-javascript-plain"],
   },
   {
     id: "nina-carducci",
     name: "Nina Carducci",
     logo: ninaCarducciLogo,
     preview: ninaCarducciPreview,
-    technos: ["devicon-html5-plain", "devicon-css3-plain"]
+    github: "https://github.com/alicia-juillet/Nina-Carducci-Dev.git",
+    technosImage: [accessibilityIcon, seoIcon]
   },
   {
     id: "kasa",
     name: "Kasa",
     logo: kasaLogo,
     preview: kasaPreview,
-    technos: ["devicon-html5-plain", "devicon-css3-plain"]
+    github: "https://github.com/alicia-juillet/location-immobiliere-kasa.git",
+    technos: ["devicon-react-plain", "devicon-sass-plain"]
   },
   {
     id: "mon-vieux-grimoire",
     name: "Mon vieux grimoire",
     logo: monVieuxGrimoireLogo,
     preview: monVieuxGrimoirePreview,
-    technos: ["devicon-html5-plain", "devicon-css3-plain"]
+    github: "https://github.com/alicia-juillet/backend.git",
+    technos: ["devicon-nodejs-plain", "devicon-express-original", "devicon-mongodb-plain"]
   },
 ];
 
@@ -70,14 +77,32 @@ function ProjectsSection() {
       <div className="project-and-technos">
 
         <div className="project-technos">
-          {activeProject.technos.map((iconClass, index) => (
-          <i key={index} className={`${iconClass} colored`}></i>
+          {activeProject.technos &&
+            activeProject.technos.map((iconClass, index) => (
+              <i key={index} className={`${iconClass} colored`}></i>
+          ))}
+
+          {activeProject.technosImage &&
+            activeProject.technosImage.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`Techno spécifique ${index + 1}`}
+                className="custom-technos-image"
+              />
           ))}
         </div>
 
         <div className="project-preview">
           <img src={activeProject.preview} alt={`Aperçu de ${activeProject.name}`} />
         </div>
+
+          <div className="project-link">
+            <a href={activeProject.github} target="_blank" rel="noopener noreferrer">
+              <i className="devicon-github-original colored"></i>
+              Voir sur GitHub
+            </a>
+  </div>
         
       </div>
 
