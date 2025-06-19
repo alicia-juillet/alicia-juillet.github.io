@@ -31,7 +31,7 @@ function About () {
                         rel="noopener noreferrer"
                         className="btn-cv"
                     >
-                        Télécharger mon CV
+                        Mon CV
                     </a>
                 </div>
             </div>    
