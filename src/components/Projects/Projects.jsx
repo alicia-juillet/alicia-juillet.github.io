@@ -77,51 +77,56 @@ function ProjectsSection() {
   return (
     <section id="projects">
       <h2>Mes projets</h2>
-      <div className="project-grid">
-        {projects.map((project) => (
-          <div
-            key={project.id}
-            className={`project-card ${activeProject.id === project.id ? "active" : ""}`}
-            onClick={() => handleProjectClick(project)}
-          >
-            <img src={project.logo} alt={`Logo ${project.name}`} />
-          </div>
-        ))}
-      </div>
-      <div className="project-and-technos">
-
-        <div className={`project-technos ${animatePreview ? "fade" : ""}`}>
-          {activeProject.technos &&
-            activeProject.technos.map((iconClass, index) => (
-              <i key={index} className={`${iconClass} colored`}></i>
-          ))}
-
-          {activeProject.technosImage &&
-            activeProject.technosImage.map((img, index) => (
-              <img
-                key={index}
-                src={img}
-                alt={`Techno spécifique ${index + 1}`}
-                className="custom-technos-image"
-              />
+      <div className="project-content">
+        <div className="project-grid">
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className={`project-card ${activeProject.id === project.id ? "active" : ""}`}
+              onClick={() => handleProjectClick(project)}
+            >
+            <p>{project.name}</p>
+            </div>
           ))}
         </div>
-        <div className="project-center">
+        <div className="project-and-technos">
+
           <div className={`project-preview ${animatePreview ? "fade" : ""}`}>
             <img src={activeProject.preview} alt={`Aperçu de ${activeProject.name}`} />
           </div>
-
+          <div className="project-infos">
+            <p className="project-description">{activeProject.description}</p>
           
-          <p className="project-description">{activeProject.description}</p>
-        </div>
-        <div className={`project-link ${animatePreview ? "fade" : ""}`}>
-            <a href={activeProject.github} target="_blank" rel="noopener noreferrer">
-              <i className="devicon-github-original colored"></i>
-              Voir sur GitHub
-            </a>
+            <div className="lang-and-link">
+
+          <div className={`project-technos ${animatePreview ? "fade" : ""}`}>
+            {activeProject.technos &&
+              activeProject.technos.map((iconClass, index) => (
+                <i key={index} className={`${iconClass} colored`}></i>
+            ))}
+
+            {activeProject.technosImage &&
+              activeProject.technosImage.map((img, index) => (
+                <img
+                  key={index}
+                  src={img}
+                  alt={`Techno spécifique ${index + 1}`}
+                  className="custom-technos-image"
+                />
+            ))}
           </div>
+        
+          <div className={`project-link ${animatePreview ? "fade" : ""}`}>
+              <a href={activeProject.github} target="_blank" rel="noopener noreferrer">
+                <i className="devicon-github-original colored"></i>
+                Voir sur GitHub
+              </a>
+          </div>
+          </div>
+        </div>
           
       </div>
+    </div>
       
       
 
