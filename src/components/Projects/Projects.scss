@@ -240,11 +240,12 @@
     }
 
     .project-grid {
+        flex-wrap: wrap;
+        justify-content: center;
       .project-card {
         font-size: 16px;
         padding: 6px 12px;
-        flex-wrap: wrap;
-        justify-content: center;
+       
       }
     }
 
