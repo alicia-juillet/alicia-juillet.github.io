@@ -11,4 +11,35 @@
         font-size: 40px;
         text-align: center; 
     }
+
+    .skills-category{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .skills-content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        
+
+        h3{
+           background-color: #312B2B; 
+           border: 1px solid #dfd5c8;
+           padding: 10px;
+        }
+    }
+
+    .skills-icons{
+        gap: 20px;
+        display: flex;
+        font-size: 30px;
+       
+        
+    }
 }
