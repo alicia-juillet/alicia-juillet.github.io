@@ -2,7 +2,7 @@
     background-color: #F1E8DF;
     display: flex;
     flex-direction: column;
-    padding: 100px 200px;
+    padding: 100px 100px;
     gap: 20px;
     scroll-margin-top: 80px;
 
@@ -66,7 +66,8 @@
             flex-direction: column;
             align-items:center;
             gap: 100px;
-            width: 500px;
+            width: 300px;
+           
             
         }
 
@@ -109,6 +110,7 @@
         justify-content: center;
         align-items: center;  
         
+        
         }
 
         .project-preview img{
@@ -117,6 +119,7 @@
             height: auto;
             max-width: 700px;
             box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+            min-width: 300px;
             
         }
 
@@ -177,6 +180,109 @@
     
 
     
+}
+
+@media (max-width: 1024px) {
+  #projects {
+    padding: 80px 60px;
+    
+    h2 {
+      font-size: 32px;
+      text-align: center;
+    }
+
+    .project-content {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .project-grid {
+      gap: 15px;
+      flex-direction: row;
+
+      .project-card {
+        font-size: 18px;
+        padding: 8px 16px;
+      }
+    }
+
+    .project-and-technos {
+      flex-direction: column;
+      min-height: auto;
+      height: auto;
+      gap: 40px;
+    }
+
+    .project-infos {
+      width: 100%;
+      gap: 60px;
+    }
+
+    .project-preview img {
+      max-width: 100%;
+      height: auto;
+      box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #projects {
+    padding: 50px 20px;
+    gap: 15px;
+
+    h2 {
+      font-size: 28px;
+    }
+
+    .project-content {
+      gap: 20px;
+    }
+
+    .project-grid {
+      .project-card {
+        font-size: 16px;
+        padding: 6px 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    .project-and-technos {
+      gap: 30px;
+    }
+
+    .project-infos {
+      gap: 40px;
+      width: 100%;
+      padding: 0 10px;
+    }
+
+    .lang-and-link {
+      gap: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #4D0000;
+    }
+
+    .project-technos i {
+      font-size: 24px;
+    }
+
+    .custom-technos-image {
+      height: 28px;
+    }
+
+    .project-description {
+      font-size: 18px;
+      max-width: 100%;
+      padding: 0 10px;
+    }
+
+    .project-link {
+      font-size: 16px;
+      padding: 0 10px;
+    }
+  }
 }
 
     
