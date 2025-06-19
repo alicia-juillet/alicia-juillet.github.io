@@ -30,7 +30,7 @@ function Header () {
                 <a href="#skills" onClick={setIsActive}>
                 Compétences
                 </a>
-                <a href="#contact" onClick={setIsActive}>
+                <a href="#footer" onClick={setIsActive}>
                 Me contacter
                 </a>
             </nav>
