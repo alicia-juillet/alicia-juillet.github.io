@@ -11,4 +11,29 @@
         text-align: center;
         color: #4D0000;
     }
+
+    .contact-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       
+        
+    }
+
+    .contact-item{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        color: #4D0000;
+
+        a{
+            text-decoration: none;
+            color: #4D0000;
+        }
+
+        i{
+            color: #242323;
+        }
+    }
 }
