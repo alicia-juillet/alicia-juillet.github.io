@@ -1,6 +1,6 @@
 import "./Skills.scss"
-import accessibilityImg from "../../assets/accessibility.png"
-import seoImg from "../../assets/seo.png"
+import accessibilityImg from "../../assets/accessibility.webp"
+import seoImg from "../../assets/seo.webp"
 
 function Skills() {
     return (
