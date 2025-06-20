@@ -40,9 +40,11 @@
     .skills-icons{
         gap: 20px;
         display: flex;
-        font-size: 30px;
-       
-        
+        font-size: 30px; 
+    }
+
+    .skills-icons img {
+      height: 25px;
     }
 }
 

@@ -1,4 +1,4 @@
-import myPicture from "../../assets/my-picture.jpg"
+import myPicture from "../../assets/my-picture.webp"
 import "./Presentation.scss"
 
 

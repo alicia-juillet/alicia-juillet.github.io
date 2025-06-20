@@ -1,24 +1,18 @@
 import "./Projects.scss"
 import { useState } from "react"
-import bookiLogo from "../../assets/images/Booki.png"
-import bookiPreview from "../../assets/images/booki-preview.png"
-import sophieBluelLogo from "../../assets/images/sophie-bluel.png"
-import sophieBluelPreview from "../../assets/images/sophie-bluel-preview.png"
-import ninaCarducciLogo from "../../assets/images/Nina-Carducci.png"
-import ninaCarducciPreview from "../../assets/images/nina-carducci-preview.png"
-import kasaLogo from "../../assets/images/Kasa.png"
-import kasaPreview from "../../assets/images/kasa-preview.png"
-import monVieuxGrimoireLogo from "../../assets/images/Mon-vieux-grimoire.png"
-import monVieuxGrimoirePreview from "../../assets/images/mon-vieux-grimoire-preview.png"
-import accessibilityIcon from "../../assets/accessibility.png";
-import seoIcon from "../../assets/seo.png";
+import bookiPreview from "../../assets/images/booki-preview.webp"
+import sophieBluelPreview from "../../assets/images/sophie-bluel-preview.webp"
+import ninaCarducciPreview from "../../assets/images/nina-carducci-preview.webp"
+import kasaPreview from "../../assets/images/kasa-preview.webp"
+import monVieuxGrimoirePreview from "../../assets/images/mon-vieux-grimoire-preview.webp"
+import accessibilityIcon from "../../assets/accessibility.webp";
+import seoIcon from "../../assets/seo.webp";
 
 
 const projects = [
   {
     id: "booki",
     name: "Booki",
-    logo: bookiLogo,
     preview: bookiPreview,
     github: "https://github.com/alicia-juillet/Booki-starter-pack.git",
     description: "Site vitrine d’agence de voyage – intégration HTML/CSS à partir d’une maquette Figma.",
@@ -27,7 +21,6 @@ const projects = [
   {
     id: "sophie-bluel",
     name: "Sophie Bluel",
-    logo: sophieBluelLogo,
     preview: sophieBluelPreview,
     github: "https://github.com/alicia-juillet/Portfolio-architecte-sophie-bluel.git",
     description: "Application de galerie photo – développement front-end en JavaScript avec gestion d’API.",
@@ -36,7 +29,6 @@ const projects = [
   {
     id: "nina-carducci",
     name: "Nina Carducci",
-    logo: ninaCarducciLogo,
     preview: ninaCarducciPreview,
     github: "https://github.com/alicia-juillet/Nina-Carducci-Dev.git",
     description:"Optimisation SEO et amélioration de l’accessibilité d’un site existant",
@@ -45,7 +37,6 @@ const projects = [
   {
     id: "kasa",
     name: "Kasa",
-    logo: kasaLogo,
     preview: kasaPreview,
     github: "https://github.com/alicia-juillet/location-immobiliere-kasa.git",
     description:"Application de location immobilière – développement d’une SPA avec React.",
@@ -54,7 +45,6 @@ const projects = [
   {
     id: "mon-vieux-grimoire",
     name: "Mon vieux grimoire",
-    logo: monVieuxGrimoireLogo,
     preview: monVieuxGrimoirePreview,
     github: "https://github.com/alicia-juillet/backend.git",
     description:"API REST pour la gestion de livres – back-end en Node.js avec MongoDB.",
