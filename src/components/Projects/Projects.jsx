@@ -16,7 +16,7 @@ const projects = [
     preview: bookiPreview,
     github: "https://github.com/alicia-juillet/Booki-starter-pack.git",
     description: "Site vitrine d’agence de voyage – intégration HTML/CSS à partir d’une maquette Figma.",
-    technos: ["devicon-html5-plain", "devicon-css3-plain"]
+    technos: ["devicon-html5-plain colored", "devicon-css3-plain colored"]
   },
   {
     id: "sophie-bluel",
@@ -40,7 +40,7 @@ const projects = [
     preview: kasaPreview,
     github: "https://github.com/alicia-juillet/location-immobiliere-kasa.git",
     description:"Application de location immobilière – développement d’une SPA avec React.",
-    technos: ["devicon-react-plain", "devicon-sass-plain"]
+    technos: ["devicon-react-plain colored", "devicon-sass-plain colored"]
   },
   {
     id: "mon-vieux-grimoire",
@@ -48,7 +48,7 @@ const projects = [
     preview: monVieuxGrimoirePreview,
     github: "https://github.com/alicia-juillet/backend.git",
     description:"API REST pour la gestion de livres – back-end en Node.js avec MongoDB.",
-    technos: ["devicon-nodejs-plain", "devicon-express-original", "devicon-mongodb-plain"]
+    technos: ["devicon-nodejs-plain colored", "devicon-express-original colored", "devicon-mongodb-plain colored"]
   },
 ];
 
@@ -92,7 +92,7 @@ function ProjectsSection() {
           <div className={`project-technos ${animatePreview ? "fade" : ""}`}>
             {activeProject.technos &&
               activeProject.technos.map((iconClass, index) => (
-                <i key={index} className={`${iconClass} colored`}></i>
+                <i key={index} className={`${iconClass} `}></i>
             ))}
 
             {activeProject.technosImage &&

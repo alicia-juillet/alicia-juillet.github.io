@@ -22,7 +22,7 @@ function Skills() {
                     <h3>Backend</h3>
                     <div className="skills-icons">
                         <i className="devicon-nodejs-plain colored" title="Node.js"></i>
-                        <i className="devicon-express-original colored" title="Express.js"></i>
+                        <i className="devicon-express-original" title="Express.js"></i>
                         <i className="devicon-mongodb-plain colored" title="MongoDB"></i>
                     </div>
                 </div>
@@ -31,7 +31,7 @@ function Skills() {
                     <h3>Outils d'assistance & de productivité</h3>
                     <div className="skills-icons">
                         <i className="devicon-git-plain colored" title="Git"></i>
-                        <i className="devicon-github-original colored" title="GitHub"></i>
+                        <i className="devicon-github-original" title="GitHub"></i>
                         <i className="devicon-vscode-plain colored" title="VS Code"></i>
                         
                     </div>

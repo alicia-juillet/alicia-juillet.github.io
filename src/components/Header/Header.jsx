@@ -19,7 +19,7 @@ function Header () {
 
     return (
         <header className="header">
-            <img src={logo} alt="logo" className="logo" onClick={logoClick}/>
+            <img src={logo} alt="Alicia Juillet développeuse web" className="logo" onClick={logoClick}/>
             <nav className="link">
                 <a href="#about" onClick={setIsActive}>
                 À propos
